@@ -2,19 +2,21 @@ import Image from 'next/image'
 
 import Profile from  '../../public/profile.png'
 import Button from '@/components/Button'
+import {Helmet}  from 'react-helmet'
 
 type Props = {}
 
 export default function Page({}: Props) {
   return (
     <>
-      <div className='container'>
+      <div className='container w-full xl:w-1/2'>
         <div className='w-full self-center px=2'>
           <div className='relative mt-10'>
             <Image 
             src={Profile} 
             alt="Dede Firmansah"
             className='max-w-full mx-auto' 
+            unoptimized
             width={350}
             height={350}
             />

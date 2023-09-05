@@ -1,7 +1,8 @@
 import Header from '@/components/Header'
 import './globals.css'
 import { Poppins } from 'next/font/google'
-import Footer from '@/components/Footer'
+import MainFooter from '@/components/Footer'
+import DefaultNavbar from '../components/Header'
 
 const inter = Poppins({ weight: '400', preload: false})
 // const inter = Poppins({ subsets: ['latin'] })
@@ -19,9 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        {/* <Header /> */}
+        <DefaultNavbar />
         {children}
-        <Footer />
+        <MainFooter />
       </body>
     </html>
   )

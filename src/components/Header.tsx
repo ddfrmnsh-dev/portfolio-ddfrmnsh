@@ -1,64 +1,42 @@
-// import React, { useEffect, useState } from 'react'
+'use client';
+import React, { useEffect, useState } from 'react'
+import { Navbar } from 'flowbite-react'
 import Link from 'next/link'
+import {  Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 
 type Props = {}
 
-// const [isActive, setIsActive] = useState(null)
+export default function DefaultHeader({}: Props) {
 
-// useEffect(() => {
-//   console.log(`Menu Akltif : ${isActive}`)
-// }, [isActive]);
+  const [open, setOpen] = useState<boolean>(false);
 
-export default function Header({}: Props) {
   return (
     <>
-      <nav className='container bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded'>
-        <div className='flex flex-wrap items-center md:justify-center mx-auto px-2 justify-between'>
-          <div className='items-center justify-between w-full md:flex md:w-auto md:order-1'>
-          <ul className="justify-center flex flex-row p-2 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
-            <a href="#" className='flex items-center'>
-              <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
-                <h2 className='text-dark px-4'>Dede Firmansah</h2>
-              </span>
-            </a>
-            <li>
-              <Link
-                href="/"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                aria-current="page"
-                // label="Home"
-                // onClick={() => setIsActive("Home")}
-                // active={isActive === "Home"}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/project"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
-                // label="Service"
-                // onClick={() => setIsActive("Project")}
-                // active={isActive === "Project"}
-              >
-                Project
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blog"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
-                // label="Service"
-                // onClick={() => setIsActive("Service")}
-                // active={isActive === "Service"}
-              >
-                Services
-              </Link>
-            </li>
-          </ul>
-          </div>
+        <div className='top-0 left-0 w-full mb-5 sticky px-2 md:px-0 lg:px-96 z-10 shadow-md'>
+           <div className={`md:flex items-center justify-between ${open ? 'bg-white' : 'bg-transparent'} py-4 md:px-10 px-7 backdrop-blur-sm`}>
+            {/* logo section */}
+            <div className='font-bold text-2xl cursor-pointer flex items-center'>
+                <span>The Child</span>
+            </div>
+            <div onClick={()=>setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7'>
+                {
+                    open ? <XMarkIcon/> : <Bars3BottomRightIcon />
+                }
+            </div>
+            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12 bg-white' : 'top-[-490px] bg-transparent'}`}>
+                    <li className='md:ml-8 md:my-0 my-7 font-semibold'>
+                        <Link href="/" className='text-gray-800 hover:text-blue-400 duration-500'>Home</Link>
+                    </li>
+                    <li className='md:ml-8 md:my-0 my-7 font-semibold'>
+                        <Link href="/project" className='text-gray-800 hover:text-blue-400 duration-500'>Project</Link>
+                    </li>
+                    <li className='md:ml-8 md:my-0 my-7 font-semibold'>
+                        <Link href="/blog" className='text-gray-800 hover:text-blue-400 duration-500'>Blog</Link>
+                    </li>
+                <button className='btn bg-primary text-white hover:text-black md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Get Started</button>
+            </ul>
+           </div>
         </div>
-      </nav>
     </>
   )
 }
