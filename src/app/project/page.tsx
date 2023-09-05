@@ -7,16 +7,14 @@ import Head from "next/head";
 import {Helmet} from "react-helmet";
 import React, { useEffect, useState } from "react";
 
-// type Props = {}
-
-interface Props {
+type Props = {
   title: string;
   desc: string;
   img: string;
-  id: number;
+  id: string;
 }
 
-export default function Page({title, desc, img}: Props, key: any) {
+export default function Page() {
   const [data, setData ] = useState<Props[]>([]); 
 
   const [isLoading , setIsLoading ] = useState(true); 
