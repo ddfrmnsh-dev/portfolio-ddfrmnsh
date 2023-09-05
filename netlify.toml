@@ -1,7 +1,6 @@
 [build]
-  command = "npm run build" # Atur perintah yang sesuai dengan cara Anda membangun aplikasi Next.js
-  publish = "out" # Sesuaikan dengan folder output dari build Anda
-
+  command = "npm run build" # Atur 
+  
 [[redirects]]
   from = "/*"
   to = "/index.html"
