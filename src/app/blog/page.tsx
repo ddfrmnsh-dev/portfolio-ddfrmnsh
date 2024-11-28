@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: "My Awesome Website",
     images: [
       {
-        url: "/image/og-image.png",
+        url: "/image/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Preview Image",
