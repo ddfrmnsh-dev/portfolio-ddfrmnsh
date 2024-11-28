@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  distDir: "custom-out",
+  // distDir: "custom-out",
 };
 
 module.exports = nextConfig;
