@@ -4,7 +4,7 @@ import BlogDetail from "../../../components/BlogDetail";
 
 export default async function BlogView({ params }: { params: { slug: string } }) {
 
-    const { slug } = await params;
+    const { slug } = params;
     const post = blogPosts.find((blog) => blog.slug === slug);
 
     if (!post) {
