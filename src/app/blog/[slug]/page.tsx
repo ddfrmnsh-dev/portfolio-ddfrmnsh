@@ -1,10 +1,10 @@
 // file: app/blog/[slug]/page.tsx
 import { blogPosts } from "../data";
 import BlogDetail from "../../../components/BlogDetail";
+type Params = Promise<{ slug: string }>;
+export default async function BlogView({ params }: { params: Params }) {
 
-export default async function BlogView({ params }: { params: { slug: string } }) {
-
-    const { slug } = params;
+    const { slug } = await params;
     const post = blogPosts.find((blog) => blog.slug === slug);
 
     if (!post) {
