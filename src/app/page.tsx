@@ -1,24 +1,24 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import Profile from  '../../public/profile.png'
-import Button from '@/components/Button'
-import {Helmet}  from 'react-helmet'
+import Profile from "../../public/profile.png";
+import Button from "../components/Button";
+import { Helmet } from "react-helmet";
 
-type Props = {}
+type Props = {};
 
 export default function Page({}: Props) {
   return (
     <>
-      <div className='container w-full xl:w-1/2'>
-        <div className='w-full self-center px-2'>
-          <div className='relative mt-10'>
-            <Image 
-            src={Profile} 
-            alt="Dede Firmansah"
-            className='max-w-full mx-auto' 
-            unoptimized
-            width={350}
-            height={350}
+      <div className="container w-full xl:w-1/2">
+        <div className="w-full self-center px-2">
+          <div className="relative mt-10">
+            <Image
+              src={Profile}
+              alt="Dede Firmansah"
+              className="max-w-full mx-auto"
+              unoptimized
+              width={350}
+              height={350}
             />
             <span className="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
               <svg
@@ -37,48 +37,49 @@ export default function Page({}: Props) {
             </span>
           </div>
         </div>
-        <div className='max-w-xl self-center px-4 my-5 justify-center'>
-          <h1 className='text-base font-semibold text-primary md:text-xl'>
+        <div className="max-w-xl self-center px-4 my-5 justify-center">
+          <h1 className="text-base font-semibold text-primary md:text-xl">
             Halo Semua ✌, saya
-            <span className='block font-bold text-dark text-3xl mt-1 md:4xl'>
+            <span className="block font-bold text-dark text-3xl mt-1 md:4xl">
               Dede Firmansah
             </span>
           </h1>
-          <h2 className='font-medium text-secondary text-lg mb-2 md:text-2xl'>
-            Student & <span className='text-dark'>Content Creator</span>
+          <h2 className="font-medium text-secondary text-lg mb-2 md:text-2xl">
+            Student & <span className="text-dark">Content Creator</span>
           </h2>
-          <p className='font-medium text-secondary mb-4 leading-relaxed'>
+          <p className="font-medium text-secondary mb-4 leading-relaxed">
             Learning from scratch.
-            <span className='text-dark font-bold'> Programming & Design.</span>
+            <span className="text-dark font-bold"> Programming & Design.</span>
           </p>
-          <Button name="Hubungi Saya" link=''/>
+          <Button name="Hubungi Saya" link="" />
         </div>
-        <div className='w-full px-4 mb-6'>
-          <h4 className='font-bold uppercase text-primary text-2xl my-3'>
-            Tentang Saya           
+        <div className="w-full px-4 mb-6">
+          <h4 className="font-bold uppercase text-primary text-2xl my-3">
+            Tentang Saya
           </h4>
-          <h2 className='font-bold text-dark text-xl md:text-2xl mb-5'>
+          <h2 className="font-bold text-dark text-xl md:text-2xl mb-5">
             Deskripsi Singkat Mengenai Saya ✌ 😀
           </h2>
-          <p className='font-medium text-secondary max-w-2xl text-md text-justify'>
+          <p className="font-medium text-secondary max-w-2xl text-md text-justify">
             Seorang Fresh Graduate, Jurusan Information System dengan pengalaman
             mengembangkan Website dengan CMS/LMS ataupun dengan framework. Saya
             merupakan pribadi yang cermat dan teliti dalam bekerja. Bisa cepat
             beradaptasi dengan pekerjaan tim maupun individual.
           </p>
         </div>
-        <div className='w-full px-4 mb-6'>
-          <h3 className='font-semibold text-dark text-2xl mb-4'> 
+        <div className="w-full px-4 mb-6">
+          <h3 className="font-semibold text-dark text-2xl mb-4">
             Mari berteman dengan saya !
           </h3>
-          <p className='font-medium text-secondary max-w-2xl text-md text-justify'>
+          <p className="font-medium text-secondary max-w-2xl text-md text-justify">
             Tak kenal maka Tak sayang, pepatah yang sering kita dengar dalam
-            kehidupan sehari - hari. Saya Dede Firmansah Mahasiswa Universita Budi
-            Luhur dan saya berasal dari{" "}
+            kehidupan sehari - hari. Saya Dede Firmansah Mahasiswa Universita
+            Budi Luhur dan saya berasal dari{" "}
             <span>
-              <a 
-              href="https://id.wikipedia.org/wiki/Kota_Tangerang"
-              className="font-bold text-neutral-500">
+              <a
+                href="https://id.wikipedia.org/wiki/Kota_Tangerang"
+                className="font-bold text-neutral-500"
+              >
                 Kota Tangerang
               </a>
             </span>
@@ -88,5 +89,5 @@ export default function Page({}: Props) {
         </div>
       </div>
     </>
-  )
+  );
 }
