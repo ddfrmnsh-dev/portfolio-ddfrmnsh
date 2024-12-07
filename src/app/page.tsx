@@ -10,7 +10,7 @@ export default function Page({}: Props) {
   return (
     <>
       <div className='container w-full xl:w-1/2'>
-        <div className='w-full self-center px=2'>
+        <div className='w-full self-center px-2'>
           <div className='relative mt-10'>
             <Image 
             src={Profile} 
