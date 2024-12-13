@@ -4,7 +4,6 @@ import CardImg from "@/components/Card";
 import Spinners from "@/components/Spinner";
 import axios from "axios";
 import Head from "next/head";
-import { Helmet } from "react-helmet";
 import React, { useEffect, useState } from "react";
 
 type Props = {
