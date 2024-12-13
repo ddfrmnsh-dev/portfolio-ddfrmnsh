@@ -26,7 +26,7 @@ export default function Breadcrumbs() {
   return (
     <nav
       aria-label="breadcrumb"
-      className="bg-white px-5 py-4 dark:bg-gray-800 mt-2 rounded-lg"
+      className="bg-white px-0 py-4 dark:bg-gray-800 mt-2 rounded-lg"
     >
       <ol className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
         <li className="flex items-center">

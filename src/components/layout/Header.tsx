@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="top-0 left-0 w-full sticky px-2 md:px-0 lg:px-96 z-10 shadow-md backdrop-blur-sm">
       <div
-        className={`md:flex items-center justify-between ${
+        className={`md:flex items-stretch justify-center ${
           open ? "bg-white" : "bg-transparent"
         } py-4 md:px-10 px-7`}
       >

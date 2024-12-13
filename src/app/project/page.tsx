@@ -2,6 +2,7 @@
 
 import CardImg from "@/components/Card";
 import Spinners from "@/components/Spinner";
+import Cards from "@/components/ui/Cards";
 import axios from "axios";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
@@ -11,6 +12,7 @@ type Props = {
   desc: string;
   img: string;
   id: string;
+  bg: string;
 };
 
 export default function Page() {
@@ -50,16 +52,42 @@ export default function Page() {
       {isLoading ? (
         <Spinners />
       ) : (
-        <>
-          {data.map((item) => (
-            <CardImg
-              key={item.id}
-              title={item.title}
-              desc={item.desc}
-              img={`/image/${item.img}`}
-            />
-          ))}
-        </>
+        <div className="py-4">
+          <div className="md:hidden snap-x snap-mandatory overflow-x-auto flex gap-4 pr-4">
+            {data.map((item) => (
+              <div
+                key={item.id}
+                className="snap-center flex-shrink-0 w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+              >
+                <Cards
+                  key={item.id}
+                  title={item.title}
+                  desc={item.desc}
+                  img={`/image/${item.img}`}
+                  imgPosition={false}
+                  classBg={item.bg}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="hidden md:grid grid-cols-2 gap-4">
+            {data.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700 "
+              >
+                <Cards
+                  key={item.id}
+                  title={item.title}
+                  desc={item.desc}
+                  img={`/image/${item.img}`}
+                  imgPosition={false}
+                  classBg={item.bg}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       )}
     </>
   );

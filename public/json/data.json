@@ -4,12 +4,38 @@
       "id": 1,
       "title": "Website E-Commerce UMKM Pinang",
       "desc": "John",
-      "img": "test.png"
+      "img": "opengraph-image.png",
+      "bg":"bg-white"
     },
     {  
       "id": 2,
       "title": "Website CMS Alfa Share",
       "desc": "John",
-      "img": ""
+      "img": "opengraph-image.png",
+      "bg":"bg-white"
+    }
+    ,
+    {  
+      "id": 3,
+      "title": "Website CMS Alfa Share",
+      "desc": "John",
+      "img": "opengraph-image.png",
+      "bg":"bg-white"
+    }
+    ,
+    {  
+      "id": 4,
+      "title": "Website CMS Alfa Share",
+      "desc": "John",
+      "img": "opengraph-image.png",
+      "bg":"bg-white"
+    }
+    ,
+    {  
+      "id": 5,
+      "title": "Website CMS Alfa Share",
+      "desc": "John",
+      "img": "opengraph-image.png",
+      "bg":"bg-white"
     }
 ]
