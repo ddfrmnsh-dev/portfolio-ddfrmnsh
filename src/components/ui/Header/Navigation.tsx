@@ -6,7 +6,7 @@ export default function LinkNavigation() {
       <li className="md:ml-8 md:my-0 my-7 font-semibold">
         <Link
           href="/"
-          className="text-gray-800 hover:text-blue-400 duration-500"
+          className="text-gray-800 hover:text-primary duration-500"
         >
           Home
         </Link>
@@ -14,15 +14,15 @@ export default function LinkNavigation() {
       <li className="md:ml-8 md:my-0 my-7 font-semibold">
         <Link
           href="/project"
-          className="text-gray-800 hover:text-blue-400 duration-500"
+          className="text-gray-800 hover:text-primary duration-500"
         >
           Project
         </Link>
       </li>
       <li className="md:ml-8 md:my-0 my-7 font-semibold">
         <Link
-          href="/blog"
-          className="text-gray-800 hover:text-blue-400 duration-500"
+          href="/article"
+          className="text-gray-800 hover:text-primary duration-500"
         >
           Blog
         </Link>

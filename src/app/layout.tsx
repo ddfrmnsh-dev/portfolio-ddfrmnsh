@@ -4,6 +4,9 @@ import { Poppins } from "next/font/google";
 // import MainFooter from "@/components/Footer";
 import DefaultNavbar from "../components/Header";
 import Footer from "@/components/layout/Footer";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 const inter = Poppins({ weight: "400", preload: false });
 // const inter = Poppins({ subsets: ['latin'] })
@@ -15,8 +18,10 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { slug?: string[] };
 }) {
   return (
     <html lang="en">
@@ -24,7 +29,10 @@ export default function RootLayout({
         <Header />
         <div className="flex flex-col min-h-screen">
           <div className="flex-grow">
-            <div className="container w-full max-w-4xl mx-auto">{children}</div>
+            <div className="container w-full max-w-4xl mx-auto">
+              <Breadcrumbs />
+              <main>{children}</main>
+            </div>
           </div>
           <Footer />
         </div>
