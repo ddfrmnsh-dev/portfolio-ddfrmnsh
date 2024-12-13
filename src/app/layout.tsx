@@ -18,10 +18,8 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { slug?: string[] };
 }) {
   return (
     <html lang="en">
