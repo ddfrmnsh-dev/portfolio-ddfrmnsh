@@ -24,10 +24,12 @@ export default function Cards({
         imgSrc={img}
         horizontal={imgPosition}
       >
-        <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h4 className="text-lg md:text-xl font-bold tracking-tight text-gray-900 dark:text-white">
           {title}
-        </h3>
-        <p className="font-normal text-gray-700 dark:text-gray-400">{desc}</p>
+        </h4>
+        <p className="font-normal text-sm text-gray-700 dark:text-gray-400">
+          {desc}
+        </p>
       </Card>
     </>
   );
