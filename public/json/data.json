@@ -5,14 +5,14 @@
         "id": 1,
         "title": "Website E-Commerce UMKM Pinang",
         "desc": "John",
-        "img": "opengraph-image.png",
+        "img": "/image/opengraph-image.png",
         "bg":"bg-white"
       },
       {  
         "id": 2,
         "title": "Website CMS Alfa Share",
         "desc": "John",
-        "img": "opengraph-image.png",
+        "img": "/image/opengraph-image.png",
         "bg":"bg-white"
       }
       ,
@@ -20,7 +20,7 @@
         "id": 3,
         "title": "Website CMS Alfa Share",
         "desc": "John",
-        "img": "opengraph-image.png",
+        "img": "/image/opengraph-image.png",
         "bg":"bg-white"
       }
       ,
@@ -28,7 +28,7 @@
         "id": 4,
         "title": "Website CMS Alfa Share",
         "desc": "John",
-        "img": "opengraph-image.png",
+        "img": "/image/opengraph-image.png",
         "bg":"bg-white"
       }
       ,
@@ -36,7 +36,7 @@
         "id": 5,
         "title": "Website CMS Alfa Share",
         "desc": "John",
-        "img": "opengraph-image.png",
+        "img": "/image/opengraph-image.png",
         "bg":"bg-white"
       }
   ],
@@ -45,14 +45,14 @@
         "id": 1,
         "title": "Website Alwafarahma",
         "desc": "John",
-        "img": "opengraph-image.png",
+        "img": "https://opengraph.githubassets.com/5ee150d3e16a84b54c9f8953afb379e16227e2b383e32abab5b9fa6ae067f750/ddfrmnsh-dev/event-management-system",
         "bg":"bg-white"
       },
       {  
         "id": 2,
         "title": "Website CMS Alwafarahma",
         "desc": "John",
-        "img": "opengraph-image.png",
+        "img": "/image/opengraph-image.png",
         "bg":"bg-white"
       }
       ,
@@ -60,7 +60,7 @@
         "id": 3,
         "title": "Website Student Alwafarahma",
         "desc": "John",
-        "img": "opengraph-image.png",
+        "img": "/image/opengraph-image.png",
         "bg":"bg-white"
       }
   ]

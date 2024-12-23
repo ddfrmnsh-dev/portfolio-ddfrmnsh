@@ -64,7 +64,7 @@ export default function Page() {
                     key={item.id}
                     title={item.title}
                     desc={item.desc}
-                    img={`/image/${item.img}`}
+                    img={`${item.img}`}
                     imgPosition={false}
                     classBg={item?.bg}
                   />
@@ -81,7 +81,7 @@ export default function Page() {
                     key={item.id}
                     title={item.title}
                     desc={item.desc}
-                    img={`/image/${item.img}`}
+                    img={`${item.img}`}
                     imgPosition={false}
                     classBg={item.bg}
                   />
@@ -118,7 +118,7 @@ export default function Page() {
                     key={item.id}
                     title={item.title}
                     desc={item.desc}
-                    img={`/image/${item.img}`}
+                    img={`${item.img}`}
                     imgPosition={false}
                     classBg={item?.bg}
                   />
@@ -135,7 +135,7 @@ export default function Page() {
                     key={item.id}
                     title={item.title}
                     desc={item.desc}
-                    img={`/image/${item.img}`}
+                    img={`${item.img}`}
                     imgPosition={false}
                     classBg={item.bg}
                   />

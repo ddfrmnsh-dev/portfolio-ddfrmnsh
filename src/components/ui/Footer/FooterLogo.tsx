@@ -21,7 +21,7 @@ export default function FooterLogo() {
         <span className="sr-only">Twitter page</span>
       </a>
       <a
-        href="#"
+        href="https://github.com/ddfrmnsh-dev"
         className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
       >
         <svg
@@ -40,7 +40,7 @@ export default function FooterLogo() {
         <span className="sr-only">GitHub account</span>
       </a>
       <a
-        href="#"
+        href="https://www.linkedin.com/in/ddfrmnsh/"
         className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
       >
         <svg
@@ -57,7 +57,7 @@ export default function FooterLogo() {
           />
           <path d="M3 5.012H0V15h3V5.012Z" />
         </svg>
-        <span className="sr-only">Dribbble account</span>
+        <span className="sr-only">Linkedin account</span>
       </a>
     </div>
   );
