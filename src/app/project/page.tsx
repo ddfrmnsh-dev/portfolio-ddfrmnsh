@@ -3,6 +3,7 @@
 import Spinners from "@/components/Spinner";
 import Cards from "@/components/ui/Cards";
 import axios from "axios";
+import { link } from "fs";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -12,6 +13,10 @@ type DataProps = {
   img: string;
   id: string;
   bg: string;
+  showButton: boolean;
+  linkExternal: boolean;
+  link: string;
+  techStack: string[];
 };
 
 export default function Page() {
@@ -67,6 +72,10 @@ export default function Page() {
                     img={`${item.img}`}
                     imgPosition={false}
                     classBg={item?.bg}
+                    showButton={item?.showButton}
+                    linkExternal={item?.linkExternal}
+                    link={item?.link}
+                    technologies={item?.techStack}
                   />
                 </div>
               ))}
@@ -84,6 +93,10 @@ export default function Page() {
                     img={`${item.img}`}
                     imgPosition={false}
                     classBg={item.bg}
+                    showButton={item?.showButton}
+                    linkExternal={item?.linkExternal}
+                    link={item?.link}
+                    technologies={item?.techStack}
                   />
                 </div>
               ))}
@@ -121,6 +134,10 @@ export default function Page() {
                     img={`${item.img}`}
                     imgPosition={false}
                     classBg={item?.bg}
+                    showButton={item?.showButton}
+                    linkExternal={item?.linkExternal}
+                    link={item?.link}
+                    technologies={item?.techStack}
                   />
                 </div>
               ))}
@@ -138,6 +155,10 @@ export default function Page() {
                     img={`${item.img}`}
                     imgPosition={false}
                     classBg={item.bg}
+                    showButton={item?.showButton}
+                    linkExternal={item?.linkExternal}
+                    link={item?.link}
+                    technologies={item?.techStack}
                   />
                 </div>
               ))}

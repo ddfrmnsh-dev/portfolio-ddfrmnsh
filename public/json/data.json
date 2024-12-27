@@ -3,25 +3,40 @@
   "dataProject":[   
       {  
         "id": 1,
-        "title": "Website E-Commerce UMKM Pinang",
-        "desc": "John",
+        "title": "Rest API Event Management System",
+        "desc": "Sebuah Rest API sederhana untuk manajemen Event dan melakukan pemesanan tiket event.",
         "img": "https://opengraph.githubassets.com/5ee150d3e16a84b54c9f8953afb379e16227e2b383e32abab5b9fa6ae067f750/ddfrmnsh-dev/event-management-system",
-        "bg":"bg-white"
+        "bg":"bg-white",
+        "showButton": true,
+        "link": "https://github.com/ddfrmnsh-dev/event-management-system",
+        "linkExternal": true,
+        "techStack":[ "go", "gin", "pqsql", "jwt"]
+
       },
       {  
         "id": 2,
-        "title": "Website CMS Alfa Share",
+        "title": "Website CMS Portfolio",
         "desc": "John",
         "img": "/image/opengraph-image.png",
-        "bg":"bg-white"
+        "bg":"bg-white",
+        "showButton": true,
+        "link": "/article",
+        "linkExternal": false,
+        "techStack":["react", "go", "mysql", "vite"]
+
       }
       ,
       {  
         "id": 3,
-        "title": "Website CMS Alfa Share",
+        "title": "Server Portfolio",
         "desc": "John",
-        "img": "/image/opengraph-image.png",
-        "bg":"bg-white"
+        "img": "https://opengraph.githubassets.com/abf07ef557b0664476a2e457ff5ec316b3fe22cc71c7537063b6290cef1f236a/ddfrmnsh-dev/server-portofolio",
+        "bg":"bg-white",
+        "showButton": true,
+        "link": "https://github.com/ddfrmnsh-dev/server-portofolio",
+        "linkExternal": true,
+        "techStack":["nodejs","express", "mysql", "jwt"]
+
       }
       ,
       {  

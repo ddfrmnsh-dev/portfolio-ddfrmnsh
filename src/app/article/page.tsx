@@ -3,6 +3,7 @@ import BlogCard from "../../components/BlogCard";
 import { Metadata } from "next";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
+import Datepickers from "@/components/ui/Datepickers";
 
 export const metadata: Metadata = {
   title: "My Awesome Website",
@@ -109,6 +110,7 @@ export default function BlogList() {
           className="my-2"
         ></div>
       </div>
+      <Datepickers />
     </>
   );
 }
