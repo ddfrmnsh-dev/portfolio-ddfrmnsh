@@ -12,6 +12,7 @@ import {
   SiVite,
   SiExpress,
   SiNodedotjs,
+  SiNextdotjs,
 } from "react-icons/si";
 
 interface CardProps {
@@ -38,6 +39,7 @@ const ICON_MAP: Record<string, React.FC<{ size?: number; color?: string }>> = {
   vite: SiVite,
   express: SiExpress,
   nodejs: SiNodedotjs,
+  nextjs: SiNextdotjs,
 };
 
 export default function Cards({
@@ -80,13 +82,13 @@ export default function Cards({
               <Button
                 href={link}
                 target="_blank"
-                className="inline-flex text-white bg-primary rounded-md"
+                className="inline-flex text-white bg-primary rounded-md focus:ring-2 focus:ring-gray-300"
               >
                 Click here
               </Button>
             ) : (
               <Link href={link}>
-                <Button className="inline-flex text-white bg-primary rounded-md">
+                <Button className="inline-flex text-white bg-primary rounded-md focus:ring-2 focus:ring-gray-300">
                   Click here
                 </Button>
               </Link>

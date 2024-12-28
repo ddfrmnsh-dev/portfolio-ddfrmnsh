@@ -16,20 +16,20 @@
       {  
         "id": 2,
         "title": "Website CMS Portfolio",
-        "desc": "John",
-        "img": "/image/opengraph-image.png",
+        "desc": "Website management content untuk wesbiste Portofolio seperti Artikel dan Project.",
+        "img": "https://opengraph.githubassets.com/d4b3dab8cfbd79ec72c54afd46b344b8addae12dd90cc5f6f7c4c109b371bc4d/ddfrmnsh-dev/cms-portoflio",
         "bg":"bg-white",
         "showButton": true,
         "link": "/article",
         "linkExternal": false,
-        "techStack":["react", "go", "mysql", "vite"]
+        "techStack":["react", "vite"]
 
       }
       ,
       {  
         "id": 3,
         "title": "Server Portfolio",
-        "desc": "John",
+        "desc": "Server ini digunakan untuk menghandle sebuah API dari CMS ataupun yang di consume oleh Web Portfolio.",
         "img": "https://opengraph.githubassets.com/abf07ef557b0664476a2e457ff5ec316b3fe22cc71c7537063b6290cef1f236a/ddfrmnsh-dev/server-portofolio",
         "bg":"bg-white",
         "showButton": true,
@@ -61,14 +61,22 @@
         "title": "Website Alwafarahma",
         "desc": "John",
         "img": "/image/opengraph-image.png",
-        "bg":"bg-white"
+        "bg":"bg-white",
+        "showButton": true,
+        "link": "https://alwafarahma.my.id",
+        "linkExternal": true,
+        "techStack":["nextjs", "tailwind"]
       },
       {  
         "id": 2,
         "title": "Website CMS Alwafarahma",
         "desc": "John",
         "img": "/image/opengraph-image.png",
-        "bg":"bg-white"
+        "bg":"bg-white",
+        "showButton": true,
+        "link": "/article",
+        "linkExternal": false,
+        "techStack":["react", "go", "mysql", "vite"]
       }
       ,
       {  
@@ -76,7 +84,11 @@
         "title": "Website Student Alwafarahma",
         "desc": "John",
         "img": "/image/opengraph-image.png",
-        "bg":"bg-white"
+        "bg":"bg-white",
+        "showButton": true,
+        "link": "/article",
+        "linkExternal": false,
+        "techStack":["react", "go", "mysql", "vite"]
       }
   ]
 }
