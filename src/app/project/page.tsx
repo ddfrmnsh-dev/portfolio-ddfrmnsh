@@ -51,7 +51,7 @@ export default function Page() {
             </h3>
             <p className="text-justify px-2 font-normal text-sm md:text-lg">
               Project pribadi yang saya kembangkan untuk mengasah keterampilan
-              programming, mencakup penguasaan front-end dan back-end.
+              programming, mencakup penguasaan FE dan BE.
             </p>
           </div>
         </div>

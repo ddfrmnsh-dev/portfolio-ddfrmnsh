@@ -32,13 +32,13 @@ export default function IntroduceSection() {
       </div>
       <div className="max-w-xl self-center px-4 my-5 justify-center">
         <h1 className="text-base font-semibold text-primary md:text-xl">
-          Halo Semua ✌, saya
+          Halo Semua 👋, saya
           <span className="block font-bold text-dark text-3xl mt-1 md:4xl">
             Dede Firmansah
           </span>
         </h1>
         <h2 className="font-medium text-secondary text-lg mb-2 md:text-2xl">
-          Student & <span className="text-dark">Content Creator</span>
+          {/* Student & <span className="text-dark">Content Creator</span> */}
         </h2>
         <p className="font-medium text-secondary mb-4 leading-relaxed">
           Learning from scratch.
